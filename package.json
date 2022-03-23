@@ -25,8 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "format": "yarn prettier --check 'src/**/*.tsx' 'src/**/*.ts' 'package.json'",
-    "lint": "yarn prettier --write 'src/**/*.tsx' 'src/**/*.ts' 'package.json'"
+    "format": "prettier --check 'src/**/*.tsx' 'src/**/*.ts' 'package.json'",
+    "lint": "prettier --write 'src/**/*.tsx' 'src/**/*.ts' 'package.json'"
   },
   "eslintConfig": {
     "extends": [
