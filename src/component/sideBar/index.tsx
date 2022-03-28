@@ -4,9 +4,11 @@ import {
   CubeIcon,
   MenuIcon,
   XIcon,
+  FolderAddIcon,
 } from "@heroicons/react/solid";
 import { Link } from "react-router-dom";
 import MenuItem from "./MenuItem";
+import MenuInner from "./MenuInner";
 export default function SideBar() {
   const [collapseShow, setCollapseShow] = useState("hidden");
   return (
@@ -64,6 +66,10 @@ export default function SideBar() {
             <div className="md:flex-col md:min-w-full flex flex-col list-none">
               <MenuItem label="Dashboard" Icon={DesktopComputerIcon} link="/" />
               <MenuItem label="Components" Icon={CubeIcon} link="/components" />
+              <MenuInner innerLinks={["/menu-1", "/menu-2"]}>
+                <MenuItem label="Menu 1" Icon={FolderAddIcon} link="/menu-1" />
+                <MenuItem label="Menu 2" Icon={FolderAddIcon} link="/menu-2" />
+              </MenuInner>
             </div>
           </div>
         </div>
